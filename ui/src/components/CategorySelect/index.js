@@ -20,14 +20,13 @@ function CategorySelect() {
     
     return (
         <div>
-        {JSON.stringify(list)}
-        <Select style={{width: '300px'}}>
-            {
-                list.map((item) => {
-                    return <Select.Option value={item.code}>{item.name}</Select.Option>
-                })
-            }
-        </Select>
+            <Select style={{width: '300px'}}>
+                {
+                    list.map((item) => {
+                        return <Select.Option value={item.code}>{item.name}</Select.Option>
+                    })
+                }
+            </Select>
         </div>
     );
 }
