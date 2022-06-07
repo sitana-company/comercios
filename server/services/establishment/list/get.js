@@ -1,16 +1,22 @@
+
+const dbSearch = `%${_req.getString('search')}%`
+
 const dbEstablishments = _db.query(`
-
-SELECT 
+  SELECT 
     estabelecimento.*,
-	categoria.nome AS categoria_nome,
-	categoria.codigo AS categoria_codigo
-FROM estabelecimento
-  INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
-WHERE 1 = 1
-  AND estabelecimento.active = TRUE
-  AND categoria.active = TRUE
-
-`)
+    categoria.nome AS categoria_nome,
+    categoria.codigo AS categoria_codigo
+  FROM estabelecimento
+    INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+  WHERE 1 = 1
+    AND estabelecimento.active = TRUE
+    AND categoria.active = TRUE
+    AND (
+      categoria.nome LIKE ?
+      OR estabelecimento.nome LIKE ?
+    )
+  LIMIT 5
+`, dbSearch, dbSearch)
 
 const list = _val.list()
 

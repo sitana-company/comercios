@@ -1,0 +1,5 @@
+{
+    "summary": "Lista de Categorias",
+    "description": "Lista todas as categorias ativas em base de dados.",
+    "type": "object"
+}

@@ -143,3 +143,812 @@ WHERE 1 = 1
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(SourceFile:882)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(SourceFile:1036)
 	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-06-07 16:23:17 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table ""promocao"" alter column ""fim"" type date default[*] current_date;"; SQL statement:
+alter table "promocao" alter column "fim" type date default current_date; [42000-200]
+2022-06-07 16:49:31 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "957b38bb-acc6-4067-8920-36d12d3218f5s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:49:31 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "957b38bb-acc6-4067-8920-36d12d3218f5s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:49:31 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "957b38bb-acc6-4067-8920-36d12d3218f5s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:49:33 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "957b38bb-acc6-4067-8920-36d12d3218f5s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:50:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Pão Mol"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:50:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Pão Mol"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:50:26 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Pão Mol"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:50:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "undefined"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:50:54 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "undefined"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:50:54 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "undefined"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:50:54 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "undefined"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:51:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "p"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:51:47 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "o"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:51:49 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:51:53 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "undefined"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:51:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:52:12 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:52:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:52:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:52:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Teste 2a"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:52:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Teste 2s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:52:40 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Teste 2a"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:52:40 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Teste 2f"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:52:40 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "Teste 2s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:52:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:54:06 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:54:07 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:54:26 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:54:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:54:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "p"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:54:40 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "o"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:55:43 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:55:44 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:55:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:55:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:55:51 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:55:53 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:56:08 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:56:09 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:56:09 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:56:10 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 16:56:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Data conversion error converting "s"; SQL statement:
+
+    SELECT 
+        estabelecimento.*,
+        categoria.nome AS categoria_nome,
+        categoria.codigo AS categoria_codigo
+    FROM estabelecimento
+        INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+    WHERE 1 = 1
+        AND estabelecimento.active = TRUE
+        AND categoria.active = TRUE
+        AND estabelecimento.uid = ?
+ [22018-200]
+2022-06-07 17:35:37 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Column "PUBLIC.estabelecimento.id" must be in the GROUP BY list; SQL statement:
+  SELECT 
+  	sum(estabelecimento.id),
+    estabelecimento.*,
+    categoria.nome AS categoria_nome,
+    categoria.codigo AS categoria_codigo
+  FROM estabelecimento
+    INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+  WHERE 1 = 1
+    AND estabelecimento.active = TRUE
+    AND categoria.active = TRUE
+	
+	LIMIT 2 OFFSET 2
+ [90016-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:576)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.ExpressionColumn.updateAggregate(ExpressionColumn.java:182)
+	at org.h2.command.dml.Select.updateAgg(Select.java:545)
+	at org.h2.command.dml.Select.gatherGroup(Select.java:525)
+	at org.h2.command.dml.Select.queryGroup(Select.java:487)
+	at org.h2.command.dml.Select.queryWithoutCache(Select.java:839)
+	at org.h2.command.dml.Query.queryWithoutCacheLazyCheck(Query.java:201)
+	at org.h2.command.dml.Query.query(Query.java:489)
+	at org.h2.command.dml.Query.query(Query.java:451)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:285)
+	at org.h2.command.Command.executeQuery(Command.java:195)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:85)
+	at org.netuno.tritao.dev.Query._main(SourceFile:58)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.netuno.proteu.Run.run(SourceFile:119)
+	at org.netuno.proteu.Run.<init>(SourceFile:49)
+	at org.netuno.proteu.DynamicURL.build(SourceFile:168)
+	at org.netuno.proteu.Enterprise.processRequest(SourceFile:419)
+	at org.netuno.proteu.Enterprise.service(SourceFile:492)
+	at javax.servlet.http.HttpServlet.service(SourceFile:750)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(SourceFile:1450)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(SourceFile:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(SourceFile:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(SourceFile:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SourceFile:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(SourceFile:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(SourceFile:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SourceFile:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(SourceFile:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(SourceFile:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(SourceFile:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(SourceFile:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SourceFile:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(SourceFile:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(SourceFile:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(SourceFile:141)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(SourceFile:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(SourceFile:127)
+	at org.eclipse.jetty.server.Server.handle(SourceFile:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(SourceFile:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(SourceFile:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(SourceFile:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(SourceFile:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(SourceFile:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(SourceFile:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(SourceFile:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(SourceFile:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(SourceFile:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(SourceFile:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(SourceFile:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(SourceFile:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(SourceFile:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(SourceFile:1036)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-06-07 17:38:13 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#1" is not set; SQL statement:
+  SELECT 
+  	RAND() AS RANDOM,
+    estabelecimento.*,
+    categoria.nome AS categoria_nome,
+    categoria.codigo AS categoria_codigo
+  FROM estabelecimento
+    INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+  WHERE 1 = 1
+    AND estabelecimento.active = TRUE
+    AND categoria.active = TRUE
+    AND (
+      categoria.nome LIKE ?
+      OR estabelecimento.nome LIKE ?
+    )
+	ORDER BY RANDOM ASC
+	--LIMIT 2 OFFSET 2
+ [90012-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:83)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:182)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:284)
+	at org.h2.command.Command.executeQuery(Command.java:195)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:85)
+	at org.netuno.tritao.dev.Query._main(SourceFile:58)
+	at jdk.internal.reflect.GeneratedMethodAccessor107.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.netuno.proteu.Run.run(SourceFile:119)
+	at org.netuno.proteu.Run.<init>(SourceFile:49)
+	at org.netuno.proteu.DynamicURL.build(SourceFile:168)
+	at org.netuno.proteu.Enterprise.processRequest(SourceFile:419)
+	at org.netuno.proteu.Enterprise.service(SourceFile:492)
+	at javax.servlet.http.HttpServlet.service(SourceFile:750)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(SourceFile:1450)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(SourceFile:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(SourceFile:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(SourceFile:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SourceFile:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(SourceFile:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(SourceFile:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SourceFile:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(SourceFile:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(SourceFile:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(SourceFile:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(SourceFile:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SourceFile:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(SourceFile:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(SourceFile:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(SourceFile:141)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(SourceFile:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(SourceFile:127)
+	at org.eclipse.jetty.server.Server.handle(SourceFile:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(SourceFile:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(SourceFile:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(SourceFile:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(SourceFile:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(SourceFile:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(SourceFile:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(SourceFile:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(SourceFile:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(SourceFile:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(SourceFile:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(SourceFile:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(SourceFile:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(SourceFile:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(SourceFile:1036)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-06-07 17:38:21 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Parameter "#1" is not set; SQL statement:
+  SELECT 
+  	RAND() AS RANDOM,
+    estabelecimento.*,
+    categoria.nome AS categoria_nome,
+    categoria.codigo AS categoria_codigo
+  FROM estabelecimento
+    INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+  WHERE 1 = 1
+    AND estabelecimento.active = TRUE
+    AND categoria.active = TRUE
+    AND (
+      categoria.nome LIKE ?
+      OR estabelecimento.nome LIKE ?
+    )
+	ORDER BY RANDOM ASC
+ [90012-200]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:590)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:429)
+	at org.h2.message.DbException.get(DbException.java:205)
+	at org.h2.message.DbException.get(DbException.java:181)
+	at org.h2.expression.Parameter.checkSet(Parameter.java:83)
+	at org.h2.command.Prepared.checkParameters(Prepared.java:182)
+	at org.h2.command.CommandContainer.query(CommandContainer.java:284)
+	at org.h2.command.Command.executeQuery(Command.java:195)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:85)
+	at org.netuno.tritao.dev.Query._main(SourceFile:58)
+	at jdk.internal.reflect.GeneratedMethodAccessor107.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.netuno.proteu.Run.run(SourceFile:119)
+	at org.netuno.proteu.Run.<init>(SourceFile:49)
+	at org.netuno.proteu.DynamicURL.build(SourceFile:168)
+	at org.netuno.proteu.Enterprise.processRequest(SourceFile:419)
+	at org.netuno.proteu.Enterprise.service(SourceFile:492)
+	at javax.servlet.http.HttpServlet.service(SourceFile:750)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(SourceFile:1450)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(SourceFile:799)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(SourceFile:550)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(SourceFile:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SourceFile:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(SourceFile:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(SourceFile:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SourceFile:1624)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(SourceFile:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(SourceFile:1435)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(SourceFile:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(SourceFile:501)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SourceFile:1594)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(SourceFile:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(SourceFile:1350)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(SourceFile:141)
+	at org.eclipse.jetty.server.handler.HandlerList.handle(SourceFile:59)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(SourceFile:127)
+	at org.eclipse.jetty.server.Server.handle(SourceFile:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(SourceFile:388)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(SourceFile:633)
+	at org.eclipse.jetty.server.HttpChannel.handle(SourceFile:380)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(SourceFile:277)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(SourceFile:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(SourceFile:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(SourceFile:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(SourceFile:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(SourceFile:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(SourceFile:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(SourceFile:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(SourceFile:383)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(SourceFile:882)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(SourceFile:1036)
+	at java.base/java.lang.Thread.run(Thread.java:833)
