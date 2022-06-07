@@ -3,6 +3,15 @@ const dbCategory = _db.queryFirst(`
     SELECT * FROM categoria WHERE codigo = ?
 `, _req.getString('category'))
 
+/*
+if (_req.getFile('photo')) {
+    const photo = _req.getFile('photo')
+    const storage = _storage.filesystem('server', photo.getName())
+    photo.save(storage)
+}*/
+
+const storage = _storage.filesystem('server', 'default.jpg')
+
 if (dbCategory) {
     _db.insert(
         'estabelecimento',
@@ -11,6 +20,7 @@ if (dbCategory) {
             .set('nome', _req.getString('name'))
             .set('telefone', _req.getString('telephone'))
             .set('email', _req.getString('email'))
+            .set('fotografia', _req.getFile('photo') || storage.file())
     )
     _out.json(
         _val.map()

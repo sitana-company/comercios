@@ -1,6 +1,7 @@
 
 import CategorySelect from './components/CategorySelect';
-import { Button, Form, Input, notification } from 'antd';
+import { Button, Form, Input, Upload, notification } from 'antd';
+import { UploadOutlined } from '@ant-design/icons';
 
 import _service from '@netuno/service-client';
 
@@ -9,10 +10,21 @@ import './App.less';
 
 function App() {
   const onFinish = (values) => {
+    const formData = new FormData();
+    formData.append('category', values.category);
+    formData.append('name', values.name);
+    formData.append('telephone', values.telephone);
+    formData.append('email', values.email);
+    debugger
+    if (values.photo && values.photo.fileList.length > 0) {
+      formData.append('photo', values.photo.fileList[
+        values.photo.fileList.length - 1
+      ].originFileObj);
+    }
     _service({
       method: 'POST',
       url: "/establishment",
-      data: values,
+      data: formData,
       success: (response) => {
         notification.success({
           message: 'Estabelecimento',
@@ -27,6 +39,23 @@ function App() {
           });
       }
     });
+  };
+
+  const uploadCustomRequest = ({file, onSuccess}) => {
+    setTimeout(() => {
+      onSuccess("ok");
+    }, 0);
+  }
+
+  const uploadBeforeValidation = (file) => {
+    const isPhoto = file.type === 'image/jpg' || file.type === 'image/jpeg';
+    if (!isPhoto) {
+      notification.error({
+        message: 'Imagem Inválida',
+        description: 'Apenas é permitido ficheiros de imagem do tipo JPG.'
+      });
+    }
+    return isPhoto || Upload.LIST_IGNORE;
   };
 
   return (
@@ -96,6 +125,15 @@ function App() {
             ]}
           >
             <Input />
+          </Form.Item>
+
+          <Form.Item
+            label="Fotografia"
+            name="photo"
+          >
+            <Upload customRequest={uploadCustomRequest} beforeUpload={uploadBeforeValidation}>
+              <Button icon={<UploadOutlined />}>Upload</Button>
+            </Upload>
           </Form.Item>
 
           <Form.Item
