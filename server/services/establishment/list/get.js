@@ -1,6 +1,8 @@
 
 const dbSearch = `%${_req.getString('search')}%`
 
+const categoryCode = _req.getString('categoryCode')
+_log.info('Codigo Categoria: '+ categoryCode)
 const dbEstablishments = _db.query(`
   SELECT 
     estabelecimento.*,
@@ -11,12 +13,13 @@ const dbEstablishments = _db.query(`
   WHERE 1 = 1
     AND estabelecimento.active = TRUE
     AND categoria.active = TRUE
+    AND (categoria.codigo = ? OR ? = '')
     AND (
       categoria.nome LIKE ?
       OR estabelecimento.nome LIKE ?
     )
   LIMIT 5
-`, dbSearch, dbSearch)
+`, categoryCode, categoryCode, dbSearch, dbSearch)
 
 const list = _val.list()
 

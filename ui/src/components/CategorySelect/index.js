@@ -4,7 +4,7 @@ import {Select} from "antd";
 
 import _service from '@netuno/service-client';
 
-function CategorySelect() {
+function CategorySelect({ onChange }) {
     const [ list, setList ] = useState([]);
     useEffect(() => {
         _service({
@@ -17,10 +17,14 @@ function CategorySelect() {
             }
         });
     }, []);
-    
+    const onSelectChange = (newValue) => {
+        if (onChange) {
+            onChange(newValue);
+        }
+    };
     return (
         <div>
-            <Select style={{width: '300px'}}>
+            <Select style={{width: '80%'}} onChange={onSelectChange}>
                 {
                     list.map((item) => {
                         return <Select.Option value={item.code}>{item.name}</Select.Option>
