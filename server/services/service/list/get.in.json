@@ -1,0 +1,5 @@
+{
+    "summary": "Lista de Serviços",
+    "description": "Lista todas os serviços ativos em base de dados.",
+    "type": "object"
+}

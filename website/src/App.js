@@ -1,9 +1,12 @@
 
-import CategorySelect from './components/CategorySelect';
 import { Button, Form, Input, Upload, notification } from 'antd';
 import { UploadOutlined } from '@ant-design/icons';
 
 import _service from '@netuno/service-client';
+
+import CategorySelect from './components/CategorySelect';
+import ProductMultiSelect from './components/ProductMultiSelect';
+import ServiceMultiSelect from './components/ServiceMultiSelect';
 
 import logo from './logo.svg';
 import './App.less';
@@ -15,7 +18,9 @@ function App() {
     formData.append('name', values.name);
     formData.append('telephone', values.telephone);
     formData.append('email', values.email);
-    debugger
+    formData.append('products', JSON.stringify(values.products));
+    formData.append('services', JSON.stringify(values.services));
+
     if (values.photo && values.photo.fileList.length > 0) {
       formData.append('photo', values.photo.fileList[
         values.photo.fileList.length - 1
@@ -134,6 +139,32 @@ function App() {
             <Upload customRequest={uploadCustomRequest} beforeUpload={uploadBeforeValidation}>
               <Button icon={<UploadOutlined />}>Upload</Button>
             </Upload>
+          </Form.Item>
+
+          <Form.Item
+            label="Prudotos"
+            name="products"
+            rules={[
+              {
+                required: true,
+                message: 'Preencha os produtos!',
+              },
+            ]}
+          >
+            <ProductMultiSelect />
+          </Form.Item>
+
+          <Form.Item
+            label="Serviços"
+            name="services"
+            rules={[
+              {
+                required: true,
+                message: 'Preencha os serviços!',
+              },
+            ]}
+          >
+            <ServiceMultiSelect />
           </Form.Item>
 
           <Form.Item

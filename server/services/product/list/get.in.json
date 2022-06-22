@@ -1,0 +1,5 @@
+{
+    "summary": "Lista de Produtos",
+    "description": "Lista todos os produtos ativos em base de dados.",
+    "type": "object"
+}

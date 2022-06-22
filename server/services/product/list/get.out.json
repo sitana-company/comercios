@@ -1,0 +1,18 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "type": "string-not-empty"
+            },
+            "code": {
+                "type": "string-not-empty"
+            }
+        },
+        "required": [
+            "name",
+            "code"
+        ]
+    }
+}
