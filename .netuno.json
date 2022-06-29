@@ -34,6 +34,11 @@
         "install": "npm install --force",
         "command": "npm run watch",
         "enabled": true
+      },{
+        "path": "website",
+        "install": "npm install --force",
+        "command": "npm run start",
+        "enabled": true
       }],
       "db": {"default": {
         "password": "",
