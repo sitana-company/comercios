@@ -20,7 +20,7 @@ function CategorySelect(props) {
     
     return (
         <div>
-            <Select style={{width: '300px'}} {...props}>
+            <Select style={{width: '100%'}} {...props}>
                 {
                     list.map((item) => {
                         return <Select.Option value={item.code}>{item.name}</Select.Option>

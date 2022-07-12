@@ -72,6 +72,18 @@ function Detail({uid, onClose}) {
                         )
                         }
                     </p>
+                    Contatos: 
+                    <ul>
+                        {
+                            data.contacts.map(
+                                (item) => 
+                                <li>
+                                    {item.description}:&nbsp;
+                                    <strong>{item.contact}</strong>
+                                </li>
+                            )
+                        }
+                    </ul>
                 </>
             }
         </Modal>

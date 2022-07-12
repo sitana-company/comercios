@@ -1,6 +1,6 @@
 
-import { Button, Form, Input, Upload, notification } from 'antd';
-import { UploadOutlined } from '@ant-design/icons';
+import { Button, Form, Input, Upload, Space, Typography, notification } from 'antd';
+import { UploadOutlined, MinusCircleTwoTone, PlusOutlined } from '@ant-design/icons';
 
 import _service from '@netuno/service-client';
 
@@ -11,6 +11,8 @@ import ServiceMultiSelect from './components/ServiceMultiSelect';
 import logo from './logo.svg';
 import './App.less';
 
+const { Title } = Typography;
+
 function App() {
   const onFinish = (values) => {
     const formData = new FormData();
@@ -20,7 +22,7 @@ function App() {
     formData.append('email', values.email);
     formData.append('products', JSON.stringify(values.products));
     formData.append('services', JSON.stringify(values.services));
-
+    formData.append('contacts', JSON.stringify(values.contacts));
     if (values.photo && values.photo.fileList.length > 0) {
       formData.append('photo', values.photo.fileList[
         values.photo.fileList.length - 1
@@ -65,120 +67,139 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Form
-          name="basic"
-          labelCol={{
-            span: 8,
-          }}
-          wrapperCol={{
-            span: 16,
-          }}
-          initialValues={{
-          }}
-          onFinish={onFinish}
-          autoComplete="off"
+      <img src={logo} className="App-logo" alt="logo" />
+      <Form
+        name="basic"
+        initialValues={{
+        }}
+        onFinish={onFinish}
+        autoComplete="off"
+        layout="vertical"
+      >
+        <Form.Item
+          label="Categoria"
+          name="category"
+          rules={[
+            {
+              required: true,
+              message: 'Preencha a categoria!',
+            },
+          ]}
         >
-          <Form.Item
-            label="Categoria"
-            name="category"
-            rules={[
-              {
-                required: true,
-                message: 'Preencha a categoria!',
-              },
-            ]}
-          >
-            <CategorySelect />
-          </Form.Item>
+          <CategorySelect />
+        </Form.Item>
 
-          <Form.Item
-            label="Nome"
-            name="name"
-            rules={[
-              {
-                required: true,
-                message: 'Preencha o seu nome!',
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
+        <Form.Item
+          label="Nome"
+          name="name"
+          rules={[
+            {
+              required: true,
+              message: 'Preencha o seu nome!',
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
 
-          <Form.Item
-            label="Telefone"
-            name="telephone"
-            rules={[
-              {
-                required: true,
-                message: 'Preencha o seu telefone!',
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
+        <Form.Item
+          label="Telefone"
+          name="telephone"
+          rules={[
+            {
+              required: true,
+              message: 'Preencha o seu telefone!',
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
 
-          <Form.Item
-            label="Email"
-            name="email"
-            rules={[
-              {
-                required: true,
-                message: 'Preencha o seu email!',
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
+        <Form.Item
+          label="Email"
+          name="email"
+          rules={[
+            {
+              required: true,
+              message: 'Preencha o seu email!',
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
 
-          <Form.Item
-            label="Fotografia"
-            name="photo"
-          >
-            <Upload customRequest={uploadCustomRequest} beforeUpload={uploadBeforeValidation}>
-              <Button icon={<UploadOutlined />}>Upload</Button>
-            </Upload>
-          </Form.Item>
+        <Form.Item
+          label="Fotografia"
+          name="photo"
+        >
+          <Upload customRequest={uploadCustomRequest} beforeUpload={uploadBeforeValidation}>
+            <Button icon={<UploadOutlined />}>Upload</Button>
+          </Upload>
+        </Form.Item>
 
-          <Form.Item
-            label="Prudotos"
-            name="products"
-            rules={[
-              {
-                required: true,
-                message: 'Preencha os produtos!',
-              },
-            ]}
-          >
-            <ProductMultiSelect />
-          </Form.Item>
+        <Form.Item
+          label="Produtos"
+          name="products"
+          rules={[
+            {
+              required: true,
+              message: 'Preencha os produtos!',
+            },
+          ]}
+        >
+          <ProductMultiSelect />
+        </Form.Item>
 
-          <Form.Item
-            label="Serviços"
-            name="services"
-            rules={[
-              {
-                required: true,
-                message: 'Preencha os serviços!',
-              },
-            ]}
-          >
-            <ServiceMultiSelect />
-          </Form.Item>
+        <Form.Item
+          label="Serviços"
+          name="services"
+          rules={[
+            {
+              required: true,
+              message: 'Preencha os serviços!',
+            },
+          ]}
+        >
+          <ServiceMultiSelect />
+        </Form.Item>
+        <Title level={5}>Outros Contatos</Title>
+        <Form.List name="contacts">
+          {(fields, { add, remove }) => (
+            <>
+              {fields.map(({ key, name, ...restField }) => (
+                <Space key={key} style={{ display: 'flex', marginBottom: 8 }} align="baseline" size="large">
+                  <Form.Item
+                    {...restField}
+                    name={[name, 'description']}
+                    rules={[{ required: true, message: 'Falta preencher a descrição.' }]}
+                  >
+                    <Input placeholder="Descrição..." />
+                  </Form.Item>
+                  <Form.Item
+                    {...restField}
+                    name={[name, 'contact']}
+                    rules={[{ required: true, message: 'Falta preencher a contato.' }]}
+                  >
+                    <Input placeholder="Contato..." />
+                  </Form.Item>
+                  <MinusCircleTwoTone twoToneColor="#eb2f96" onClick={() => remove(name)} />
+                </Space>
+              ))}
+              <Form.Item>
+                <Button type="dashed" onClick={() => add()} block icon={<PlusOutlined />}>
+                  Adicionar
+                </Button>
+              </Form.Item>
+            </>
+          )}
+        </Form.List>
 
-          <Form.Item
-            wrapperCol={{
-              offset: 8,
-              span: 16,
-            }}
-          >
-            <Button type="primary" htmlType="submit">
-              Submit
-            </Button>
-          </Form.Item>
-        </Form>
-      </header>
+        <Form.Item>
+          <Button type="primary" htmlType="submit">
+            Enviar
+          </Button>
+        </Form.Item>
+      </Form>
     </div>
   );
 }

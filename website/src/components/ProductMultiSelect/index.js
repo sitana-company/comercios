@@ -20,7 +20,7 @@ function ProductMultiSelect(props) {
     
     return (
         <div>
-            <Select mode="multiple" style={{width: '300px'}} {...props}>
+            <Select mode="multiple" style={{width: '100%'}} {...props}>
                 {
                     list.map((item) => {
                         return <Select.Option value={item.code}>{item.name}</Select.Option>

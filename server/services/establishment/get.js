@@ -24,6 +24,13 @@ const dbServices = _db.query(`
     `, dbEstablishment.getInt('id')
 )
 
+const dbContacts = _db.query(`
+    SELECT * 
+    FROM estabelecimento_contato
+    WHERE estabelecimento_id = ?
+    `, dbEstablishment.getInt('id')
+)
+
 const data = _val.map()
     .set('uid', dbEstablishment.getString('uid'))
     .set('name', dbEstablishment.getString('nome'))
@@ -55,6 +62,16 @@ for (const dbService of dbServices) {
     )
 }
 data.set('services', services)
+
+const contacts = _val.list()
+for (const dbContact of dbContacts) {
+    contacts.add(
+        _val.map()
+            .set('description', dbContact.getString('descricao'))
+            .set('contact', dbContact.getString('contato'))
+    )
+}
+data.set('contacts', contacts)
 
 _out.json(
     data

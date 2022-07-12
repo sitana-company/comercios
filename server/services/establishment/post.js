@@ -53,6 +53,17 @@ if (dbCategory) {
         }
     }
 
+    const contacts = _val.fromJSON(_req.getString('contacts'))
+    for (const fields of contacts) {
+        _db.insert(
+            'estabelecimento_contato',
+            _val.map()
+                .set('estabelecimento_id', dbEstablishmentID)
+                .set('descricao', fields.getString('description'))
+                .set('contato', fields.getString('contact'))
+        )
+    }
+
     _out.json(
         _val.map()
             .set('result', true)
